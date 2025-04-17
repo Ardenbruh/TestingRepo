@@ -1,20 +1,11 @@
-# weather_app.py (feature/new_ui branch)
+# correct_math.py
 
-def get_temperature():
-    return "Temperature: 24°C"
+def add(a, b):
+    return a + b
 
-def get_forecast():
-    return "Forecast: Clear skies"
-
-def display_ui():
-    print("📡 Weather Dashboard")
-    print("====================")
-    print(get_temperature())
-    print(get_forecast())
-
-def apply_theme(theme="light"):
-    return f"Theme applied: {theme}"
+def subtract(a, b):
+    return a - b
 
 if __name__ == "__main__":
-    display_ui()
-    print(apply_theme("dark"))
+    print("Add 7 + 2 =", add(7, 2))         # Output: 9
+    print("Subtract 10 - 4 =", subtract(10, 4))  # Output: 6

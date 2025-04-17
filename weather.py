@@ -1,20 +1,20 @@
-# weather_app.py (main branch)
+# weather_app.py (feature/new_ui branch)
 
-def get_temperature(celsius=True):
-    temp_c = 24
-    if celsius:
-        return f"Temperature: {temp_c}°C"
-    else:
-        temp_f = (temp_c * 9/5) + 32
-        return f"Temperature: {temp_f}°F"
+def get_temperature():
+    return "Temperature: 24°C"
 
 def get_forecast():
     return "Forecast: Clear skies"
 
-def send_weather_alert():
-    return "Weather Alert: No severe conditions."
-
-if __name__ == "__main__":
+def display_ui():
+    print("📡 Weather Dashboard")
+    print("====================")
     print(get_temperature())
     print(get_forecast())
-    print(send_weather_alert())
+
+def apply_theme(theme="light"):
+    return f"Theme applied: {theme}"
+
+if __name__ == "__main__":
+    display_ui()
+    print(apply_theme("dark"))

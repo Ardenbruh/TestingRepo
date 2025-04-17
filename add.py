@@ -1,5 +1,26 @@
-def add(a,b):
-  return a+b
+# correct_calculator.py
 
-def mul(a,b):
-  return a*b
+def add(a, b):
+    return a + b
+
+def subtract(a, b):
+    return a - b
+
+def multiply(a, b):
+    return a * b
+
+def divide(a, b):
+    if b == 0:
+        return "Error: Division by zero."
+    return a / b
+
+def main():
+    a = 10
+    b = 5
+    print("Add:", add(a, b))
+    print("Subtract:", subtract(a, b))
+    print("Multiply:", multiply(a, b))
+    print("Divide:", divide(a, b))
+
+if __name__ == "__main__":
+    main()
